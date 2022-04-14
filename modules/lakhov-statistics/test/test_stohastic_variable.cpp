@@ -10,6 +10,7 @@ TEST(Statistic_Values, Constructor) {
     std::vector<double> p = {0.25, 0.25, 0.25, 0.25};
     StohasticVariable eps(v, p);
     ASSERT_EQ(eps.values(), v);
+    ASSERT_EQ(eps.probabilities(), p);
 }
 
 TEST(Statistic_Values, Mean) {
