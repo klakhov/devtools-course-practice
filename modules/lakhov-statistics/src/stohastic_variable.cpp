@@ -2,15 +2,15 @@
 
 #include "include/stohastic_variable.h"
 
-StohasticVariable::StohasticVariable(std::vector<double>& values,
-                                     std::vector<double>& probabilities)
+StohasticVariable::StohasticVariable(const std::vector<double>& values,
+                                     const std::vector<double>& probabilities)
                              : values_(values), probabilities_(probabilities) {}
 
-std::vector<double>& StohasticVariable::values() {
+const std::vector<double>& StohasticVariable::values() {
     return this->values_;
 }
 
-std::vector<double>& StohasticVariable::probabilities() {
+const std::vector<double>& StohasticVariable::probabilities() {
     return this->probabilities_;
 }
 

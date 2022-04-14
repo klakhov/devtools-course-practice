@@ -7,14 +7,14 @@
 
 class StohasticVariable {
  protected:
-    std::vector<double>& values_;
-    std::vector<double>& probabilities_;
+    const std::vector<double>& values_;
+    const std::vector<double>& probabilities_;
  public:
-    StohasticVariable(std::vector<double>& values,
-                      std::vector<double>& probabilities);
+    StohasticVariable(const std::vector<double>& values,
+                      const std::vector<double>& probabilities);
 
-    std::vector<double>& values();
-    std::vector<double>& probabilities();
+    const std::vector<double>& values();
+    const std::vector<double>& probabilities();
 
     double RawMoment(int k);
     double Mean();

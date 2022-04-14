@@ -1,4 +1,4 @@
-// Copyright 2022 Kirill Lakhov
+// Copyright 2022 Lakhov Kirill
 
 #include <gtest/gtest.h>
 
