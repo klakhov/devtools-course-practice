@@ -1,6 +1,7 @@
 // Copyright 2022 Lakhov Kirill
 
 #include "include/stohastic_variable.h"
+#include <vector>
 
 StohasticVariable::StohasticVariable(const std::vector<double>& values,
                                      const std::vector<double>& probabilities)
