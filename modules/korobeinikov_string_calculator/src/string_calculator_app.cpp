@@ -1,5 +1,8 @@
 // Copyright 2022 Lakhov Kirill
 
+#include <string>
+#include <stdexcept>
+
 #include "include/string_calculator.h"
 #include "include/string_calculator_app.h"
 
@@ -23,8 +26,6 @@ std::string StringCalculatorApp::operator() (int argc, const char** argv) {
     } catch (std::invalid_argument& e) {
         return this->calc_error(e);
     }
-
-    return this->argument_error();
 }
 
 std::string StringCalculatorApp::help() {
